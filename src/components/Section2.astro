@@ -1,0 +1,77 @@
+---
+---
+
+<section>
+  <div class="container_images">
+    <img class="img_1" src="https://static.app/landing/assets/uploads/img-2.jpg" alt="" />
+    <img class="img_2" src="https://static.app/landing/assets/uploads/img-3.jpg" alt="" />
+  </div>
+  <div>
+    <h1>Try it now, it works anywhere.</h1>
+    <p>
+      Upload an archive here and go <a>● live</a>. We’ll unpack it, find and create a
+      URL for each page that’s inside.
+    </p>
+    <button>
+        Get Started
+    </button>
+  </div>
+</section>
+
+<style lang="scss">
+    @mixin btn($background, $color){
+        background: $background;
+        color: $color;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background: darken($background, 10%);
+        }
+    }
+  section {
+    width: 70%;
+    margin: 0 auto;
+    gap: 20px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    .container_images{
+        .img_1{
+            position: relative;
+            top: 50px;
+            z-index: 2;
+        }
+        .img_2{
+            position: relative;
+            bottom: 50px;
+            right: 50px;
+        }
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #1f2b24;
+    }
+    p{
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 20px;
+        a{
+            color: #27ae60;
+        }
+    }
+    button{
+        @include btn(#27ae60, #fff);
+    }
+  }
+</style>

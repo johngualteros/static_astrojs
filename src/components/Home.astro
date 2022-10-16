@@ -1,0 +1,94 @@
+---
+---
+
+<div class="container">
+  <div>
+    <h1>
+      One-click solution for your <span class="text_green">static<a>?</a></span> website.
+    </h1>
+    <p>
+      Drag-n-drop an archive with your page or a website and we will take care
+      of the rest.
+    </p>
+    <div class="container_buttons">
+      <button class="upload">
+        <i class="bi bi-cloud-arrow-up"></i>
+        Upload for Free
+      </button>
+      <button class="watch">
+        <i class="bi bi-youtube"></i> Watch Video
+      </button>
+    </div>
+  </div>
+  <div>
+    <img
+      src="https://static.app/landing/assets/svg/image.svg"
+      alt="home image"
+    />
+  </div>
+</div>
+
+<style lang="scss">
+    @mixin btn($background-color, $color){
+        background-color: $background-color;
+        color: $color;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: darken($background-color, 10%);
+        }
+    }
+  .container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 0 150px;
+    height: auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #1f2b24;
+      line-height: 1;
+      .text_green {
+        color: #27ae60;
+        position: relative;
+      }
+      a{
+        position: absolute;
+        top: 2;
+        left: 10;
+        padding: 5px 10px;
+        border-radius: 50%;
+        font-size: 1rem;
+        background-color: #27ae60;
+        color: #fff;
+        z-index: 1;
+        cursor: pointer;
+        &:hover{
+            background-color: #a59aeaff;
+        }
+      }
+    }
+    p{
+        font-size: 1.3rem;
+        color: #333;
+        margin-bottom: 2rem;
+    }
+    .upload{
+        @include btn(#27ae60, #fff);
+    }
+    .watch{
+        @include btn(transparent, #333);
+        margin-left: 1rem;
+    }
+  }
+</style>

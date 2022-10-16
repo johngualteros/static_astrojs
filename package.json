@@ -1,0 +1,20 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astro-github-elements/clipboard-copy": "^0.0.3",
+    "@github/clipboard-copy-element": "^1.1.2",
+    "astro": "^1.5.0",
+    "sass": "^1.55.0",
+    "scss": "^0.2.4"
+  }
+}

@@ -1,0 +1,75 @@
+---
+import { ClipboardCopy } from "@astro-github-elements/clipboard-copy";
+
+const code1 = "git clone https://github.com/johngualteros/static_astrojs.git";
+---
+
+<section>
+  <h1>Try It Now!</h1>
+  <p>
+    Get started with the simpliest static page hosting ever by uploading your
+    project or drag-n-drop wherever you want.
+  </p>
+  <code>
+    <pre>          
+<span class="hljs-keyword">git</span> clone https://github.com/johngualteros/static_astrojs.git
+    </pre>
+    <ClipboardCopy value={code1} class="button"><i class="bi bi-files-alt"></i></ClipboardCopy>
+  </code>
+</section>
+
+<style lang="scss">
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 100px;
+    width: 70%;
+    margin: 0 auto;
+    color: #333;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #27ae60;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    code {
+      background-color: rgb(244, 244, 244);
+      font-weight: bold;
+      font-size: 1.2rem;
+      position: relative;
+      padding: 70px 20px 20px 30px;
+      border-radius: 5px;
+      border: 1px solid #27ae60;
+      color: #333;
+      pre {
+        margin: 0;
+      }
+      .button {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #27ae60;
+        border: 1px solid #27ae60;
+        cursor: pointer;
+        i {
+          font-size: 1.5rem;
+        }
+        &:hover {
+          background-color: #2ecc71;
+          color: #fff;
+        }
+      }
+    }
+  }
+</style>

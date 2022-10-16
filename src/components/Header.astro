@@ -1,0 +1,69 @@
+---
+---
+
+<header>
+  <div class="container_left">
+    <h1>
+        stat<span class="color-green">i</span>c<span class="color-gray">.app</span>
+    </h1>
+    <a href="#">FEATURES</a>
+    <a href="#">PRICING</a>
+  </div>
+  <div class="container_right">
+    <button>OPEN APP &rarr;</button>
+    <a href="#" class="button">SIGN UP</a>
+  </div>
+</header>
+
+<style lang="scss">
+  header {
+    padding: 35px 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    a{
+        font-size: .8rem;
+        font-weight: bold;
+        margin-right: 20px;
+        color: #333;
+        text-decoration: none;
+        &:hover{
+        color: #a59aeaff;
+        }
+    }
+    .container_left{
+        display: flex;
+        align-items: center;
+        h1{
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-right: 20px;
+            .color-green{
+            color: #27ae60;
+            }
+            .color-gray{
+            color: #bdbdbd;
+            }
+        }
+    }
+    .container_right{
+        a{
+            margin-left: 20px;
+        }
+        button{
+            background-color: #d4f5e2;
+            color: #27ae60;
+            border: none;
+            padding: 14px 18px;
+            border-radius: 5px;
+            font-size: .8rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+  }
+</style>

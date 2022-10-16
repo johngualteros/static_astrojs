@@ -1,0 +1,63 @@
+---
+
+---
+
+<div class="alert_cookies">
+    <div class="container_cookies">
+        <h1>🍪</h1>
+        <p>
+            By using this website, you agree to our <a>privacy policy</a>.
+        </p>
+    </div>
+    <div class="container_buttons">
+        <button class="decline_btn">Decline</button>
+        <button class="agree_btn">I agree</button>
+    </div>
+</div>
+
+<style lang="scss">
+    @mixin btn ($background, $color){
+        background-color: $background;
+        color: $color;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+    .alert_cookies {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        color: #333;
+        font-size: 16px;
+        z-index: 3;
+        width: 300px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        .container_cookies{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            a{
+                color: #333;
+                text-decoration: underline;
+            }
+            p{
+                margin-left: 10px;
+            }
+        }
+        .container_buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .decline_btn{
+                @include btn(#fff, #333);
+            }
+            .agree_btn{
+                @include btn(#fff, #27ae60);
+            }
+        }
+    }
+</style>
